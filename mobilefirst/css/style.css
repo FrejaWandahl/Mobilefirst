@@ -23,6 +23,11 @@ h1 {
   font-size: 100px;
 }
 
+/* Typografi styles */
+h2, h3, p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 
 /*Kroppen styles med baggrundsbillede på en af undersiderne*/
 body {
@@ -297,11 +302,11 @@ nav .menu {
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: 100%;
-  line-height: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  line-height: 1.6;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
 }
 
@@ -319,13 +324,13 @@ nav .menu {
   }
 
 
-p{
+.ptekst {
   color: var(--black);
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
   text-align: left;
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 3;
   margin-left: -20%;
 }
 
@@ -388,6 +393,38 @@ p{
   .tekstforside1 {
     background-image: url();
   }
+
+
+
+/*Media Rules - Underside - Ølsmagning*/
+.oel_overskrift {
+  text-align: center;
+}
+
+.oel_intro {
+  text-align: center;
+  padding-bottom: 10%;
+}
+#oeltekst, #oeltekst1, #oeltekst2, #oeltekst3, #oeltekst4, #oeltekst5{
+  margin-top: -150px;
+  padding-left: 30%;
+  padding-bottom: 20%;
+}
+.oelnavn {
+  font-weight: 500;
+}
+.producent {
+  font-size: .7em;
+}
+#infographic_oel {
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+.oel {
+  width: 40%;
+  padding-left: 5%;
+}
 
 }
 
@@ -467,14 +504,83 @@ body {
     font-size: 30px;
   }
 
-  p {
+  .ptekst {
     font-size: 30px;
   }
+
+
+  /*Media Rules - Underside - Ølsmagning*/
+  .oel_overskrift {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .oel_intro {
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0 0 5% 0;
+    line-height: 1.5;
+  }
+
+  #oeltekst, #oeltekst1, #oeltekst2, #oeltekst3, #oeltekst4, #oeltekst5{
+    margin-top: -250px;
+    padding-left: 30%;
+    padding-bottom: 20%;
+  }
+
+  .oelnavn {
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+
+  .producent {
+    font-size: 1.3em;
+  }
+
+  .oelinfo{
+    font-size: 1.5em;
+    margin-left: -15%;
+  }
+  #infographic_oel {
+    width: 100%;
+  }
+
+  .oel {
+    width: 30%;
+    padding-left: 5%;
+  }
+
+
 
 }
 
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 1024px) {
 
+  /*Media Rules - Underside - Ølsmagning*/
+  .oel_overskrift {
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .oel_intro {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 5% 10% 5%;
+  }
+
+  #oeltekst, #oeltekst1, #oeltekst2, #oeltekst3, #oeltekst4, #oeltekst5{
+  display:none;
+}
+
+  #infographic_oel {
+    width: 50%;
+    padding-left: 20%;
+
+  }
+
+  .oel {
+  display: none;
+  }
 
 }
